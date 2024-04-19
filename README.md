@@ -1,6 +1,6 @@
 # React + Vite with Tailwind CSS
 
-**Scrrening test task for Frontend developer.**
+**Screening test task for Frontend developer.**
 
 ### login Credentials
 
