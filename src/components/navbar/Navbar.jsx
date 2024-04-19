@@ -1,12 +1,9 @@
-import { useNavigate } from "react-router-dom";
 import logo from "/assets/logo/logo.svg";
 
 export default function Navbar() {
-  const navigate = useNavigate();
-
   const signOut = () => {
     localStorage.clear();
-    navigate("/");
+    location.reload();
   };
 
   return (

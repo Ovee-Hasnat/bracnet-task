@@ -5,14 +5,18 @@ import Dashboard from "./pages/Dashboard";
 import PrivateOutlet from "../utils/PrivateOutlet";
 
 function App() {
-  const auth = localStorage.authUser;
   return (
     <>
       <Routes>
         <Route
           path="/"
-          exact
-          element={auth ? <Navigate to={"/dashboard"} /> : <Login />}
+          element={
+            localStorage.authUser ? (
+              <Navigate to={"/dashboard"} replace={true} />
+            ) : (
+              <Login />
+            )
+          }
         />
 
         <Route path="/*" element={<PrivateOutlet />}>
