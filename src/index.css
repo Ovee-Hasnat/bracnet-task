@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .box_shadow {
+    box-shadow: 10px 16px 7.7px 0px #00000040;
+  }
+}
